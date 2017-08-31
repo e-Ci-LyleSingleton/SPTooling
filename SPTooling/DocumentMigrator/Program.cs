@@ -87,3 +87,49 @@ namespace DocumentMigrator
         }
     }
 }
+
+
+/*
+  Public Shared Sub UploadStreamToSharepoint(ByVal oMemoryStream As MemoryStream, _
+                                            ByVal fileName As String, ByVal sLibraryName As String, ByVal sRelativePathToLibrary As String, _
+                                            Optional ByVal sDrawingNumber As String = "", Optional ByVal fromException As Boolean = False, Optional hasWatermark As Boolean = False)
+
+        On Error Resume Next
+
+        Dim siteUrl As String = c.gV(Common.MyApp.Setting("SiteURL")).Trim()
+
+        Using context = New ClientContext(siteUrl)
+
+            Dim securePassword As New SecureString()
+            For Each c As Char In Common.Crypto.DES.DeCrypt(Common.MyApp.Setting("globalPassword")).ToCharArray()
+                securePassword.AppendChar(c)
+            Next
+            context.AuthenticationMode = ClientAuthenticationMode.[Default]
+            context.Credentials = New SharePointOnlineCredentials(Common.MyApp.Setting("globalUsername"), securePassword)
+            
+
+            Dim web As ClientOM.Web = context.Web
+            Dim list As ClientOM.List = web.Lists.GetByTitle(sLibraryName)
+            context.ExecuteQuery()
+
+
+            oMemoryStream.Position = 0
+
+            Dim fileServerRelativeUrl As String = sRelativePathToLibrary & "/" & Common.c.gV(fileName).Trim()
+
+            Using oMemoryStream
+
+                ClientOM.File.SaveBinaryDirect(context, fileServerRelativeUrl, oMemoryStream, True)
+
+                context.ExecuteQuery()
+
+            End Using
+
+        End Using
+
+        On Error GoTo 0
+
+    End Sub
+
+     
+     */

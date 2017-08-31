@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddListItemWithId", "AddListItemWitId\AddListItemWithId.csproj", "{4E177BE9-5BC0-4EB0-8FC2-7AD82FED014E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentMigrator", "DocumentMigrator\DocumentMigrator.csproj", "{E7B8868A-1227-43B0-A561-ED701245744A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E177BE9-5BC0-4EB0-8FC2-7AD82FED014E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E177BE9-5BC0-4EB0-8FC2-7AD82FED014E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E177BE9-5BC0-4EB0-8FC2-7AD82FED014E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E177BE9-5BC0-4EB0-8FC2-7AD82FED014E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7B8868A-1227-43B0-A561-ED701245744A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B8868A-1227-43B0-A561-ED701245744A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7B8868A-1227-43B0-A561-ED701245744A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B8868A-1227-43B0-A561-ED701245744A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
